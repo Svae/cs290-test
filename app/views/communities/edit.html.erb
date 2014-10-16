@@ -1,6 +1,13 @@
-<h1>Editing community</h1>
+<div class="actions form-group">
+
+  <div class="col-sm-offset-2 col-sm-10">
+    <h1>Editing community</h1>
+  </div>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @community %> |
-<%= link_to 'Back', communities_path %>
+  <div class="col-sm-offset-2 col-sm-10">
+    <%= link_to 'Show',  @community, class: 'btn btn-primary btn-xs' %>
+    <%= link_to 'Back', communities_path, class: 'btn btn-info btn-xs' %>
+  </div>
+</div>

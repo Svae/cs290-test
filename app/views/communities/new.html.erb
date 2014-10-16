@@ -1,5 +1,18 @@
-<h1>New community</h1>
+<ul class="nav nav-tabs" role="tablist">
+  <li><%= link_to 'View list', communities_path %></li>
+  <li class="active"><%= link_to 'New community', new_community_path %></li>
+</ul>
+
+<div class="actions form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <h1>New community</h1>
+  </div>
+</div>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', communities_path %>
+<div class="actions form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <%= link_to 'Back', communities_path, class: 'btn btn-info' %>
+  </div>
+</div>
